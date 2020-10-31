@@ -19,6 +19,22 @@ body
 nav
 {
     border-bottom: 2px solid #6e6e6e;
+    background: rgba(255, 255, 255, 0.8);
+    position: sticky;
+    top: 0;
+    box-shadow: gray 0px 2px 10px;
+    width: 75vw;
+}
+
+nav ul {
+    margin-bottom: 10px;
+    margin-top: 0;
+    
+}
+
+nav h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 h1 
@@ -46,6 +62,7 @@ h3
     padding-left: 2vw;
     padding-right: 2vw;
     margin-bottom:5vh;
+    overflow: hidden;
 }
 
 #blog
@@ -62,11 +79,20 @@ h3
     color: #4f4f4f;
 }
 
-img
-{
+img {
+    margin: 10px;
     border: 5px solid white;
     box-shadow: gray 0px 0px 10px;
-    width: 40vw;
+    max-width: 50%;
+    height: auto;
+}
+
+.blog-posts:nth-child(even) img {
+    float: left;
+}
+
+.blog-posts:nth-child(odd) img {
+    float: right;
 }
 
 table
@@ -105,4 +131,21 @@ table, th, td {
 td
 {
     background-color: #fff;
+}
+
+.form {
+    display: flex;
+    flex: column;
+}
+
+form {
+    box-shadow: gray 0px 0px 10px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px;
 }
