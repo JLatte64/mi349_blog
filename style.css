@@ -149,3 +149,19 @@ button {
     margin-top: 10px;
     padding: 5px;
 }
+
+/* media queries: target specific rules to specific browser queries */
+@media (max-width: 400px)
+{
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+}
