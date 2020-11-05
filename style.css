@@ -135,7 +135,7 @@ td
 
 .form {
     display: flex;
-    flex: column;
+    flex-direction: column;
 }
 
 form {
